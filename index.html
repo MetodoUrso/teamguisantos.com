@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Consultoria - Guilherme Santos</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }   
+        #carousel1 {
+            --carousel-index: 0;
+            --carousel-move: 0;
+            transform: translateX(calc(var(--carousel-index) * var(--carousel-move)));
+        }
+        #carousel2 {
+            --carousel-index: 0;
+            --carousel-move: 0;
+            transform: translateX(calc(var(--carousel-index) * var(--carousel-move)));
+        }
+        .font-bebasneue {
+            font-family: 'Bebas Neue', sans-serif;
+        }
+        .font-montserrat {
+            font-family: 'Montserrat', sans-serif;
+        }
+    </style>
+</head>
+<body>  
+    <!-- Headline e VSL -->
+    <div class="flex flex-col lg:flex-row w-full h-screen">
+        <div class="relative lg:static flex items-end lg:justify-end w-full h-full lg:w-1/2 bg-cover bg-center bg-no-repeat" style="background-image: url('imagens/IMG_0090.jpg')">
+            <div class="w-full h-[30%] lg:w-[30%] lg:h-full bg-gradient-to-t lg:bg-gradient-to-l from-white"></div>
+        </div>
+        <div class="absolute bottom-0 lg:static flex flex-col items-center justify-center w-full lg:w-1/2 p-5">
+            <iframe class="w-full lg:w-[500px] h-52 lg:h-96" src="https://www.youtube.com/embed/RRdBCJAdqR4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <button class="text-white font-montserrat font-bold rounded-lg bg-[#B85E75] shadow shadow-black w-full md:w-1/2 p-3 mt-5">
+                <a href="#planos">ENTRAR PARA EQUIPE!</a>
+            </button>
+        </div>
+    </div>
+    <!-- Headline e VSL -->
+
+
+
+    <!-- Beneficios do Produto -->
+    <div class="flex flex-col lg:flex-row">
+        <div class="flex items-end lg:justify-end w-full lg:w-1/2 h-screen bg-cover bg-center bg-no-repeat" style="background-image: url('imagens/IMG_0239.jpg')">
+            <div class="w-full h-[30%] lg:w-[50%] lg:h-full bg-gradient-to-t lg:bg-gradient-to-l from-white"></div>
+        </div>
+        <div class="flex flex-col items-center lg:items-start justify-center text-white w-full lg:w-1/2 p-5 -mt-16 lg:-mt-0 space-y-5">
+            <div class="hidden lg:block">
+                <p class="text-5xl text-[#142339] font-bebasneue -mb-2">BENEFÍCIOS</p>
+                <p class="text-7xl text-[#B85E75] font-bebasneue">DO PRODUTO</p>
+            </div>
+            <div class="lg:hidden">
+                <p class="text-4xl text-[#142339] font-bebasneue">BENEFÍCIOS <span class="text-[#B85E75]">DO PRODUTO</span></p>
+            </div>
+            <div class="text-base xl:text-lg text-justify text-[#142339] font-montserrat space-y-3">
+                <div class="flex items-center">
+                    <img src="imagens/icones/check.png">
+                    <p class="ml-1">Planilha de treino completa e personalizada de acordo com o seu objetivo.</p>
+                </div>
+                <div class="flex items-center">
+                    <img src="imagens/icones/check.png">
+                    <p class="ml-1">Vídeos práticos demonstrando a execução perfeita de todos os exercícios.</p>
+                </div>
+                <div class="flex items-center">
+                    <img src="imagens/icones/check.png">
+                    <p class="ml-1">Contato exclusivamente comigo para tirar dúvidas a qualquer momento.</p>
+                </div>
+                <div class="flex items-center">
+                    <img src="imagens/icones/check.png">
+                    <p class="ml-1">Renovação da planilha de treino a cada 45 dias conforme a sua evolução.</p>
+                </div>
+            </div>
+            <button class="text-white font-montserrat font-bold rounded-lg bg-[#B85E75] shadow shadow-black w-full lg:w-1/3 p-3">
+                <a href="#planos">ENTRAR PARA EQUIPE!</a>
+            </button>
+        </div>
+    </div>
+    <!-- Beneficios do Produto -->
+
+
+
+    <!-- Carrossel de Antes e Depois -->
+    <div class="flex flex-col items-center justify-center w-full bg-gradient-to-b from-[#1D2122] via-[#4C5659] to-[#1D2122] pb-20">
+        <p class="text-6xl lg:text-8xl text-white text-center font-bebasneue py-10">RESULTADOS <span class="text-[#B85E75]">REAIS</span></p>
+        <div class="relative overflow-x-hidden w-full lg:w-[80%]">
+            <div id="carousel1" class="flex items-center duration-1000 ease-in-out w-full space-x-[5%]">
+                <div class="flex w-[80%] lg:w-[37.5%] shrink-0 grow-0 ml-[10%]">
+                    <img class="w-full rounded-lg" src="imagens/antesEdepois/antesEdepois1.jpg">
+                </div>
+                <div class="flex w-[80%] lg:w-[37.5%] shrink-0 grow-0">
+                    <img class="w-full rounded-lg" src="imagens/antesEdepois/antesEdepois2.jpg">
+                </div>
+                <div class="flex w-[80%] lg:w-[37.5%] shrink-0 grow-0">
+                    <img class="w-full rounded-lg" src="imagens/antesEdepois/antesEdepois1.jpg">
+                </div>
+                <div class="flex w-[80%] lg:w-[37.5%] shrink-0 grow-0">
+                    <img class="w-full rounded-lg" src="imagens/antesEdepois/antesEdepois2.jpg">
+                </div>
+            </div>
+            <div class="lg:hidden absolute flex items-center justify-between top-[45%] w-full text-white px-[5%] md:px-[7%] xl:px-[8%]">
+                <button onclick="prev1(85, 1)" class="bg-[#B85E75] rounded-full py-3 px-4"><i class="fa-solid fa-arrow-left"></i></button>
+                <button onclick="next1(85, 1)" class="bg-[#B85E75] rounded-full py-3 px-4"><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+            <div class="hidden lg:flex absolute items-center justify-between top-[45%] w-full text-white px-[5%] md:px-[7%] xl:px-[8%]">
+                <button onclick="prev1(42.5, 2)" class="bg-[#B85E75] rounded-full py-3 px-4"><i class="fa-solid fa-arrow-left"></i></button>
+                <button onclick="next1(42.5, 2)" class="bg-[#B85E75] rounded-full py-3 px-4"><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </div>
+    </div>
+    <!-- Carrossel de Antes e Depois -->
+
+
+
+    <!-- Consultoria por Aplicativo -->
+    <div class="flex flex-col lg:flex-row">
+        <div class="flex items-end lg:justify-end w-full lg:w-1/2 h-screen bg-cover bg-center bg-no-repeat" style="background-image: url('imagens/IMG_0123.jpg')">
+            <div class="w-full h-[30%] lg:w-[30%] lg:h-full bg-gradient-to-t lg:bg-gradient-to-l from-white"></div>
+        </div>
+        <div class="flex flex-col items-center lg:items-start justify-center w-full lg:w-1/2 p-5 -mt-20 lg:-mt-0 space-y-5">
+            <div class="hidden lg:block">
+                <p class="text-5xl text-[#142339] font-bebasneue -mb-2">CONSULTORIA</p>
+                <p class="text-7xl text-[#B85E75] font-bebasneue">POR APLICATIVO</p>
+            </div>
+            <div class="lg:hidden">
+                <p class="text-4xl text-[#142339] font-bebasneue">CONSULTORIA <span class="text-[#B85E75]">POR APLICATIVO</span></p>
+            </div>
+            <div class="text-base xl:text-lg text-justify text-[#142339] font-montserrat space-y-3">
+                <div class="flex items-center">
+                    <img src="imagens/icones/check.png">
+                    <p class="ml-1">Planilha de treino completa e personalizada de acordo com o seu objetivo.</p>
+                </div>
+                <div class="flex items-center">
+                    <img src="imagens/icones/check.png">
+                    <p class="ml-1">Vídeos práticos demonstrando a execução perfeita de todos os exercícios.</p>
+                </div>
+                <div class="flex items-center">
+                    <img src="imagens/icones/check.png">
+                    <p class="ml-1">Contato exclusivamente comigo para tirar dúvidas a qualquer momento.</p>
+                </div>
+                <div class="flex items-center">
+                    <img src="imagens/icones/check.png">
+                    <p class="ml-1">Renovação da planilha de treino a cada 45 dias conforme a sua evolução.</p>
+                </div>
+            </div>
+            <button class="text-white font-montserrat font-bold rounded-lg bg-[#B85E75] shadow shadow-black w-full lg:w-1/3 p-3">
+                <a href="#planos">ENTRAR PARA EQUIPE!</a>
+            </button>
+        </div>
+    </div>
+    <!-- Consultoria por Aplicativo -->
+
+
+
+    <!-- Carrossel de Depoimentos -->
+    <div class="flex flex-col items-center justify-center w-full bg-gradient-to-b from-[#1D2122] via-[#4C5659] to-[#1D2122] pb-20">
+        <p class="text-6xl lg:text-8xl text-white text-center font-bebasneue py-10">Depoimentos <span class="text-[#B85E75]">REAIS</span></p>
+        <div class="relative overflow-hidden w-full lg:w-[80%]">
+            <div id="carousel2" class="flex items-center duration-1000 ease-in-out w-full space-x-[5%]">
+                <video class="flex w-[80%] lg:w-[23.33%] shrink-0 grow-0 ml-[10%]" controls controlslist="nodownload">
+                    <source class="w-full" src="imagens/depoimentos/depoimento1.mov">
+                </video>
+                <video class="flex w-[80%] lg:w-[23.33%] shrink-0 grow-0" controls controlslist="nodownload">
+                    <source class="w-full" src="imagens/depoimentos/depoimento2.mov">
+                </video>
+                <video class="flex w-[80%] lg:w-[23.33%] shrink-0 grow-0" controls controlslist="nodownload">
+                    <source class="w-full" src="imagens/depoimentos/depoimento3.mp4">
+                </video>
+                <video class="flex w-[80%] lg:w-[23.33%] shrink-0 grow-0" controls controlslist="nodownload">
+                    <source class="w-full" src="imagens/depoimentos/depoimento4.mp4">
+                </video>
+                <video class="flex w-[80%] lg:w-[23.33%] shrink-0 grow-0" controls controlslist="nodownload">
+                    <source class="w-full" src="imagens/depoimentos/depoimento5.mp4">
+                </video>
+                <video class="flex w-[80%] lg:w-[23.33%] shrink-0 grow-0" controls controlslist="nodownload">
+                    <source class="w-full" src="imagens/depoimentos/depoimento6.mp4">
+                </video>
+            </div>
+            <div class="lg:hidden absolute flex items-center justify-between top-[45%] w-full text-white px-[5%]">
+                <button onclick="prev2(85, 1)" class="bg-[#B85E75] rounded-full py-3 px-4"><i class="fa-solid fa-arrow-left"></i></button>
+                <button onclick="next2(85, 1)" class="bg-[#B85E75] rounded-full py-3 px-4"><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+            <div class="hidden lg:flex absolute items-center justify-between top-[45%] w-full text-white px-[8%]">
+                <button onclick="prev2(28.33, 3)" class="bg-[#B85E75] rounded-full py-3 px-4"><i class="fa-solid fa-arrow-left"></i></button>
+                <button onclick="next2(28.33, 3)" class="bg-[#B85E75] rounded-full py-3 px-4"><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </div>
+    </div>
+    <!-- Carrossel de Depoimentos -->
+
+
+    <!-- Planos -->
+    <div id="planos" class="flex justify-center my-10">
+        <div class="flex flex-col lg:flex-row w-[90%] lg:w-[80%] space-y-10 lg:space-y-0 lg:space-x-10">
+            <div class="flex flex-col items-center lg:w-[25%] font-montserrat rounded-3xl bg-gray-400">
+                <p class="w-full text-2xl text-center font-bold bg-gray-500 rounded-t-3xl p-3">Plano Anual</p>
+                <div class="flex font-bold space-x-1 mt-5">
+                    <p class="text-xl">R$</p>
+                    <p class="text-5xl">105</p>
+                    <div class="text-md">
+                        <p>,00</p>
+                        <p>Mês</p>
+                    </div>
+                </div>
+                <div class="flex flex-col text-center space-y-3 my-5">
+                    <p>30% de desconto</p>
+                    <p>Renovação de 8 treinos</p>
+                    <p>Atinja uma transformação completa</p>
+                </div>
+                <button class="font-bold bg-gray-500 rounded-3xl p-3 mb-5"><a href="">COMEÇAR AGORA</a></button>
+            </div>
+            <div class="flex flex-col items-center lg:w-[25%] font-montserrat rounded-3xl bg-gray-400">
+                <p class="w-full text-2xl text-center font-bold bg-gray-500 rounded-t-3xl p-3">Plano Semestral</p>
+                <div class="flex font-bold space-x-1 mt-5">
+                    <p class="text-xl">R$</p>
+                    <p class="text-5xl">120</p>
+                    <div class="text-md">
+                        <p>,00</p>
+                        <p>Mês</p>
+                    </div>
+                </div>
+                <div class="flex flex-col text-center space-y-3 my-5">
+                    <p>20% de desconto</p>
+                    <p>Renovação de 4 treinos</p>
+                    <p>Atinja uma transformação completa</p>
+                </div>
+                <button class="font-bold bg-gray-500 rounded-3xl p-3 mb-5"><a href="">COMEÇAR AGORA</a></button>
+            </div>
+            <div class="flex flex-col items-center lg:w-[25%] font-montserrat rounded-3xl bg-gray-400">
+                <p class="w-full text-2xl text-center font-bold bg-gray-500 rounded-t-3xl p-3">Plano Trimestral</p>
+                <div class="flex font-bold space-x-1 mt-5">
+                    <p class="text-xl">R$</p>
+                    <p class="text-5xl">135</p>
+                    <div class="text-md">
+                        <p>,00</p>
+                        <p>Mês</p>
+                    </div>
+                </div>
+                <div class="flex flex-col text-center space-y-3 my-5">
+                    <p>10% de desconto</p>
+                    <p>Renovação de 2 treinos</p>
+                    <p>Atinja uma transformação completa</p>
+                </div>
+                <button class="font-bold bg-gray-500 rounded-3xl p-3 mb-5"><a href="">COMEÇAR AGORA</a></button>
+            </div>
+            <div class="flex flex-col items-center lg:w-[25%] font-montserrat rounded-3xl bg-gray-400">
+                <p class="w-full text-2xl text-center font-bold bg-gray-500 rounded-t-3xl p-3">Plano Mensal</p>
+                <div class="flex font-bold space-x-1 mt-5">
+                    <p class="text-xl">R$</p>
+                    <p class="text-5xl">150</p>
+                    <div class="text-md">
+                        <p>,00</p>
+                        <p>Mês</p>
+                    </div>
+                </div>
+                <div class="flex flex-col text-center space-y-3 my-5">
+                    <p>Cancele quando quiser</p>
+                    <p>Renovação de 1 treino</p>
+                    <p>Atinja uma transformação completa</p>
+                </div>
+                <button class="font-bold bg-gray-500 rounded-3xl p-3 mb-5"><a href="">COMEÇAR AGORA</a></button>
+            </div>
+        </div>
+    </div>
+    <!-- Planos -->
+
+
+
+    <!-- Quebra de objeções -->
+    <div class="bg-gradient-to-b from-gray-900 via-gray-900 to-gray-900">
+        <div class="text-white py-10 lg:px-10">
+            <p class="text-4xl text-center font-bold pb-10">Perguntas Frequentes</p>
+            <div class="flex flex-col lg:flex-row text-justify mx-5 lg:space-x-5">
+                <div class="lg:w-1/2 mb-5 lg:mb-0 space-y-5">
+                    <div onclick="faq('#btn1')" class="cursor-pointer w-full border border-[#B85E75] rounded-xl p-5">
+                        <p class="font-bebasneue text-2xl">Quando o treino estará pronto?</p>
+                        <p id="btn1" class="font-montserrat hidden mt-3">Enviarei seu treino completo em até 4 dias úteis, após a compra e preenchimento de todas as informações e com fotos do corpo.</p>
+                    </div>
+                    <div onclick="faq('#btn2')" class="cursor-pointer border border-[#B85E75] rounded-xl p-5">
+                        <p class="font-bebasneue text-2xl">Como posso estar tirando minhas dúvidas?</p>
+                        <p id="btn2" class="font-montserrat hidden mt-3">Dentro do aplicativo e WhatsApp, você terá acesso ao meu SUPORTE individual, onde irei responder todas as suas dúvidas e perguntas.</p>
+                    </div>
+                    <div onclick="faq('#btn3')" class="cursor-pointer border border-[#B85E75] rounded-xl p-5">
+                        <p class="font-bebasneue text-2xl">Posso fazer meus treinos onde quiser?</p>
+                        <p id="btn3" class="font-montserrat hidden mt-3">Os treinos serão montados para serem executados exclusivamente na academia.</p>
+                    </div>
+                    <div onclick="faq('#btn4')" class="cursor-pointer border border-[#B85E75] rounded-xl p-5">
+                        <p class="font-bebasneue text-2xl">Como será o acompanhamento para o meu desenvolvimento corporal?</p>
+                        <p id="btn4" class="font-montserrat hidden mt-3">Estarei junto a você em todo o seu processo, aprimorando cada dia mais seu desenvolvimento, para alcançarmos seus resultados da maneira mais rápida.</p>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 space-y-5">
+                    <div onclick="faq('#btn5')" class="cursor-pointer border border-[#B85E75] rounded-xl p-5">
+                        <p class="font-bebasneue text-2xl">Terá dietas junto com a planilha de treinos?</p>
+                        <p id="btn5" class="font-montserrat hidden mt-3">Não é incluso dietas dentro da planilha.</p>
+                    </div>
+                    <div onclick="faq('#btn6')" class="cursor-pointer border border-[#B85E75] rounded-xl p-5">
+                        <p class="font-bebasneue text-2xl">Preciso treinar todos os dias?</p>
+                        <p id="btn6" class="font-montserrat hidden mt-3">Irei montar sua planilha de treinos de acordo com todas as suas disponibilidade de horários e objetivos.</p>
+                    </div>
+                    <div onclick="faq('#btn7')" class="cursor-pointer border border-[#B85E75] rounded-xl p-5">
+                        <p class="font-bebasneue text-2xl">Em quanto tempo terei resultados?</p>
+                        <p id="btn7" class="font-montserrat hidden mt-3">Com foco e consistência, alcançaremos juntos seus resultados o mais rápido que você possa imaginar, estarei ao seu lado acelerando ainda mais seu processo, com treinos diretamente focados em seus objetivos.</p>
+                    </div>
+                    <div onclick="faq('#btn8')" class="cursor-pointer border border-[#B85E75] rounded-xl p-5">
+                        <p class="font-bebasneue text-2xl">Por que devo confiar em seu trabalho?</p>
+                        <p id="btn8" class="font-montserrat hidden mt-3">Chegou finalmente a hora de você saber quais são os métodos corretos e quais as maneiras certas se executar um treino. <br> Sou um profissional de extrema competência, estou a anos trabalhando nesse mercado , transformando a vida de centenas de pessoas. Tenho um propósito em minha vida a seguir, o qual é poder alavancar o seu processo de maneira certa, leve e rápida ! <br> Estarei 100% ao seu lado, acompanhando passo a passo de sua jornada, o meu principal objetivo,  é definitivamente te ajudar a chegar no corpo que você sempre quis!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Rodapé -->
+        <div class="flex flex-col md:flex-row text-white">
+            <div class="flex flex-col items-center justify-center w-full md:w-1/2 p-5">
+                <p class="text-2xl font-bold tracking-widest mb-3">Guilherme Santos</p>
+                <div class="flex space-x-5">
+                    <a href="https://www.instagram.com/gui.santos_personal" target="_blank"><img class="w-8 h-8" src="imagens/icones/instagram.png"></a>
+                    <a href="https://www.instagram.com/gui.santos_personal" target="_blank"><img class="w-8 h-8" src="imagens/icones/facebook.png"></a>
+                </div>
+            </div>
+            <div class="flex flex-col items-center justify-center text-sm w-full md:w-1/2 p-5">
+                <p>Copyright 2022</p>
+                <p>Todos os direitos reservados.</p>
+                <div class="flex">
+                    <a href="https://metodourso.fun/termos-de-uso">Termos de Uso</a>
+                    <span>&nbsp|&nbsp</span>
+                    <a href="https://metodourso.fun/politicas-de-privacidade">Políticas de Privacidade</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // ------------------------------ Carrossel de Antes e Depois ------------------------------ \\
+        let carousel1 = document.querySelector("#carousel1");
+        let images1 = document.querySelectorAll("#carousel1 div");
+        function prev1(value, limit) {
+            let carouselIndex = parseInt(getComputedStyle(carousel1).getPropertyValue("--carousel-index"));
+            carousel1.style.setProperty("--carousel-move", -value + "%");
+            if (carouselIndex < 1)
+                carousel1.style.setProperty("--carousel-index", images1.length - limit);
+            else
+                carousel1.style.setProperty("--carousel-index", carouselIndex - 1);
+        }
+        function next1(value, limit) {
+            let carouselIndex = parseInt(getComputedStyle(carousel1).getPropertyValue("--carousel-index"));
+            carousel1.style.setProperty("--carousel-move", -value + "%");
+            if (carouselIndex >= images1.length - limit)
+                carousel1.style.setProperty("--carousel-index", 0);
+            else
+                carousel1.style.setProperty("--carousel-index", carouselIndex + 1);
+        }
+        // ------------------------------ Carrossel de Antes e Depois ------------------------------ \\
+
+
+        
+        // ------------------------------ Carrossel de Depoimentos ------------------------------ \\
+        let carousel2 = document.querySelector("#carousel2");
+        let images2 = document.querySelectorAll("#carousel2 video");
+        function prev2(value, limit) {
+            let carouselIndex = parseInt(getComputedStyle(carousel2).getPropertyValue("--carousel-index"));
+            carousel2.style.setProperty("--carousel-move", -value + "%");
+            if (carouselIndex < 1)
+                carousel2.style.setProperty("--carousel-index", images2.length - limit);
+            else
+                carousel2.style.setProperty("--carousel-index", carouselIndex - 1);
+        }
+        function next2(value, limit) {
+            let carouselIndex = parseInt(getComputedStyle(carousel2).getPropertyValue("--carousel-index"));
+            carousel2.style.setProperty("--carousel-move", -value + "%");
+            if (carouselIndex >= images2.length - limit)
+                carousel2.style.setProperty("--carousel-index", 0);
+            else
+                carousel2.style.setProperty("--carousel-index", carouselIndex + 1);
+        }
+        // ------------------------------ Carrossel de Depoimentos ------------------------------ \\
+
+
+        
+        // ------------------------------ Quebra de Objeções ------------------------------ \\
+        function faq(value) {
+            $(value).slideToggle();
+        }
+        // ------------------------------ Quebra de Objeções ------------------------------ \\
+    </script>
+</body>
+</html>
