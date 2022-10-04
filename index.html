@@ -94,7 +94,7 @@
 
     <!-- Carrossel de Antes e Depois -->
     <div class="flex flex-col items-center justify-center w-full bg-gradient-to-b from-[#1D2122] via-[#4C5659] to-[#1D2122] pb-20">
-        <p class="text-5xl lg:text-8xl text-white text-center font-bebasneue py-10">RESULTADOS <span class="text-[#B85E75]">REAIS</span></p>
+        <p class="text-4xl lg:text-8xl text-white text-center font-bebasneue py-10">RESULTADOS <span class="text-[#B85E75]">REAIS</span></p>
         <div class="relative overflow-x-hidden w-full lg:w-[80%]">
             <div id="carousel1" class="flex items-center duration-1000 ease-in-out w-full space-x-[5%]">
                 <div class="flex w-[80%] lg:w-[37.5%] shrink-0 grow-0 ml-[10%]">
@@ -110,14 +110,10 @@
                     <img class="w-full rounded-lg" src="imagens/antesEdepois/antesEdepois2.jpg">
                 </div>
             </div>
-            <div class="lg:hidden absolute flex items-center justify-between top-[45%] w-full text-white px-[5%] md:px-[7%] xl:px-[8%]">
-                <button onclick="prev1(85, 1)" class="bg-[#B85E75] rounded-full py-3 px-4"><i class="fa-solid fa-arrow-left"></i></button>
-                <button onclick="next1(85, 1)" class="bg-[#B85E75] rounded-full py-3 px-4"><i class="fa-solid fa-arrow-right"></i></button>
-            </div>
-            <div class="hidden lg:flex absolute items-center justify-between top-[45%] w-full text-white px-[5%] md:px-[7%] xl:px-[8%]">
-                <button onclick="prev1(42.5, 2)" class="bg-[#B85E75] rounded-full py-3 px-4"><i class="fa-solid fa-arrow-left"></i></button>
-                <button onclick="next1(42.5, 2)" class="bg-[#B85E75] rounded-full py-3 px-4"><i class="fa-solid fa-arrow-right"></i></button>
-            </div>
+            <button onclick="prev1(85, 1)" class="block lg:hidden absolute top-[40%] text-white bg-[#B85E75] rounded-full py-3 px-4 ml-[5%]"><i class="fa-solid fa-arrow-left"></i></button>
+            <button onclick="next1(85, 1)" class="block lg:hidden absolute top-[40%] right-0 text-white bg-[#B85E75] rounded-full py-3 px-4 mr-[5%]"><i class="fa-solid fa-arrow-right"></i></button>
+            <button onclick="prev1(42.5, 2)" class="hidden lg:block absolute top-[42.5%] text-white bg-[#B85E75] rounded-full py-3 px-4 ml-[8%]"><i class="fa-solid fa-arrow-left"></i></button>
+            <button onclick="next1(42.5, 2)" class="hidden lg:block absolute top-[42.5%] right-0 text-white bg-[#B85E75] rounded-full py-3 px-4 mr-[8%]"><i class="fa-solid fa-arrow-right"></i></button>
         </div>
     </div>
     <!-- Carrossel de Antes e Depois -->
@@ -166,47 +162,31 @@
 
     <!-- Carrossel de Depoimentos -->
     <div class="flex flex-col items-center justify-center w-full bg-gradient-to-b from-[#1D2122] via-[#4C5659] to-[#1D2122] pb-20">
-        <p class="text-5xl lg:text-8xl text-white text-center font-bebasneue py-10">Depoimentos <span class="text-[#B85E75]">REAIS</span></p>
+        <p class="text-6xl lg:text-8xl text-white text-center font-bebasneue py-10">Depoimentos <span class="text-[#B85E75]">REAIS</span></p>
         <div class="relative overflow-hidden w-full lg:w-[80%]">
             <div id="carousel2" class="flex items-center duration-1000 ease-in-out w-full space-x-[5%]">
-                <video class="flex w-[80%] lg:w-[23.33%] shrink-0 grow-0 ml-[10%]" controls controlslist="nodownload">
-                    <source class="w-full" src="imagens/depoimentos/depoimento1.mov">
-                </video>
-                <video class="flex w-[80%] lg:w-[23.33%] shrink-0 grow-0" controls controlslist="nodownload">
-                    <source class="w-full" src="imagens/depoimentos/depoimento2.mov">
-                </video>
-                <video class="flex w-[80%] lg:w-[23.33%] shrink-0 grow-0" controls controlslist="nodownload">
-                    <source class="w-full" src="imagens/depoimentos/depoimento3.mp4">
-                </video>
-                <video class="flex w-[80%] lg:w-[23.33%] shrink-0 grow-0" controls controlslist="nodownload">
-                    <source class="w-full" src="imagens/depoimentos/depoimento4.mp4">
-                </video>
-                <video class="flex w-[80%] lg:w-[23.33%] shrink-0 grow-0" controls controlslist="nodownload">
-                    <source class="w-full" src="imagens/depoimentos/depoimento5.mp4">
-                </video>
-                <video class="flex w-[80%] lg:w-[23.33%] shrink-0 grow-0" controls controlslist="nodownload">
-                    <source class="w-full" src="imagens/depoimentos/depoimento6.mp4">
-                </video>
+                <video class="flex w-[80%] lg:w-[23.33%] shrink-0 grow-0 ml-[10%]" src="imagens/depoimentos/depoimento6.mp4" controls controlslist="nodownload"></video>
+                <video class="flex w-[80%] lg:w-[23.33%] shrink-0 grow-0" src="imagens/depoimentos/depoimento4.mp4" controls controlslist="nodownload"></video>
+                <video class="flex w-[80%] lg:w-[23.33%] shrink-0 grow-0" src="imagens/depoimentos/depoimento5.mp4" controls controlslist="nodownload"></video>
+                <video class="flex w-[80%] lg:w-[23.33%] shrink-0 grow-0" src="imagens/depoimentos/depoimento1.mov" controls controlslist="nodownload"></video>
+                <video class="flex w-[80%] lg:w-[23.33%] shrink-0 grow-0" src="imagens/depoimentos/depoimento2.mov" controls controlslist="nodownload"></video>
+                <video class="flex w-[80%] lg:w-[23.33%] shrink-0 grow-0" src="imagens/depoimentos/depoimento3.mp4" controls controlslist="nodownload"></video>
             </div>
-            <div class="lg:hidden absolute flex items-center justify-between top-[45%] w-full text-white px-[5%]">
-                <button onclick="prev2(85, 1)" class="bg-[#B85E75] rounded-full py-3 px-4"><i class="fa-solid fa-arrow-left"></i></button>
-                <button onclick="next2(85, 1)" class="bg-[#B85E75] rounded-full py-3 px-4"><i class="fa-solid fa-arrow-right"></i></button>
-            </div>
-            <div class="hidden lg:flex absolute items-center justify-between top-[45%] w-full text-white px-[8%]">
-                <button onclick="prev2(28.33, 3)" class="bg-[#B85E75] rounded-full py-3 px-4"><i class="fa-solid fa-arrow-left"></i></button>
-                <button onclick="next2(28.33, 3)" class="bg-[#B85E75] rounded-full py-3 px-4"><i class="fa-solid fa-arrow-right"></i></button>
-            </div>
+            <button onclick="prev2(85, 1)" class="block lg:hidden absolute top-[45%] text-white bg-[#B85E75] rounded-full py-3 px-4 ml-[5%]"><i class="fa-solid fa-arrow-left"></i></button>
+            <button onclick="next2(85, 1)" class="block lg:hidden absolute top-[45%] right-0 text-white bg-[#B85E75] rounded-full py-3 px-4 mr-[5%]"><i class="fa-solid fa-arrow-right"></i></button>
+            <button onclick="prev2(28.33, 3)" class="hidden lg:block absolute top-[42.5%] text-white bg-[#B85E75] rounded-full py-3 px-4 ml-[8%]"><i class="fa-solid fa-arrow-left"></i></button>
+            <button onclick="next2(28.33, 3)" class="hidden lg:block absolute top-[42.5%] right-0 text-white bg-[#B85E75] rounded-full py-3 px-4 mr-[8%]"><i class="fa-solid fa-arrow-right"></i></button>
         </div>
     </div>
     <!-- Carrossel de Depoimentos -->
 
 
     <!-- Planos -->
-    <div id="planos" class="flex justify-center my-10">
+    <div id="planos" class="flex justify-center bg-gray-900 py-10">
         <div class="flex flex-col lg:flex-row w-[90%] lg:w-[80%] space-y-10 lg:space-y-0 lg:space-x-10">
-            <div class="flex flex-col items-center lg:w-[25%] font-montserrat rounded-3xl bg-gray-400">
-                <p class="w-full text-2xl text-center font-bold bg-gray-500 rounded-t-3xl p-3">Plano Anual</p>
-                <div class="flex font-bold space-x-1 mt-5">
+            <div class="flex flex-col items-center lg:w-[25%] font-montserrat rounded-3xl bg-[#023C00]">
+                <p class="w-full text-2xl text-white text-center font-bold border-b rounded-t-3xl p-3">PLANO ANUAL</p>
+                <div class="flex text-[#00FF33] font-bold space-x-1 mt-5">
                     <p class="text-xl">R$</p>
                     <p class="text-5xl">105</p>
                     <div class="text-md">
@@ -214,15 +194,15 @@
                         <p>Mês</p>
                     </div>
                 </div>
-                <div class="flex flex-col text-center space-y-3 my-5">
+                <div class="flex flex-col text-white text-center space-y-3 my-5">
                     <p>30% de desconto</p>
                     <p>Renovação de 8 treinos</p>
                     <p>Atinja uma transformação completa</p>
                 </div>
-                <button class="font-bold bg-gray-500 rounded-3xl p-3 mb-5"><a href="">COMEÇAR AGORA</a></button>
+                <button class="text-white font-bold bg-[#00FF33] rounded-3xl p-3 mb-5"><a href="">COMEÇAR AGORA</a></button>
             </div>
             <div class="flex flex-col items-center lg:w-[25%] font-montserrat rounded-3xl bg-gray-400">
-                <p class="w-full text-2xl text-center font-bold bg-gray-500 rounded-t-3xl p-3">Plano Semestral</p>
+                <p class="w-full text-2xl text-white text-center font-bold border-b rounded-t-3xl p-3">PLANO SEMESTRAL</p>
                 <div class="flex font-bold space-x-1 mt-5">
                     <p class="text-xl">R$</p>
                     <p class="text-5xl">120</p>
@@ -231,7 +211,7 @@
                         <p>Mês</p>
                     </div>
                 </div>
-                <div class="flex flex-col text-center space-y-3 my-5">
+                <div class="flex flex-col text-white text-center space-y-3 my-5">
                     <p>20% de desconto</p>
                     <p>Renovação de 4 treinos</p>
                     <p>Atinja uma transformação completa</p>
@@ -239,7 +219,7 @@
                 <button class="font-bold bg-gray-500 rounded-3xl p-3 mb-5"><a href="">COMEÇAR AGORA</a></button>
             </div>
             <div class="flex flex-col items-center lg:w-[25%] font-montserrat rounded-3xl bg-gray-400">
-                <p class="w-full text-2xl text-center font-bold bg-gray-500 rounded-t-3xl p-3">Plano Trimestral</p>
+                <p class="w-full text-2xl text-white text-center font-bold border-b rounded-t-3xl p-3">PLANO TRIMESTRAL</p>
                 <div class="flex font-bold space-x-1 mt-5">
                     <p class="text-xl">R$</p>
                     <p class="text-5xl">135</p>
@@ -248,16 +228,16 @@
                         <p>Mês</p>
                     </div>
                 </div>
-                <div class="flex flex-col text-center space-y-3 my-5">
+                <div class="flex flex-col text-white text-center space-y-3 my-5">
                     <p>10% de desconto</p>
                     <p>Renovação de 2 treinos</p>
                     <p>Atinja uma transformação completa</p>
                 </div>
                 <button class="font-bold bg-gray-500 rounded-3xl p-3 mb-5"><a href="">COMEÇAR AGORA</a></button>
             </div>
-            <div class="flex flex-col items-center lg:w-[25%] font-montserrat rounded-3xl bg-gray-400">
-                <p class="w-full text-2xl text-center font-bold bg-gray-500 rounded-t-3xl p-3">Plano Mensal</p>
-                <div class="flex font-bold space-x-1 mt-5">
+            <div class="flex flex-col items-center lg:w-[25%] font-montserrat rounded-3xl text-white border bg-gray-900">
+                <p class="w-full text-2xl text-center font-bold border-b rounded-t-3xl p-3">PLANO MENSAL</p>
+                <div class="flex font-bold text-[#800000] space-x-1 mt-5">
                     <p class="text-xl">R$</p>
                     <p class="text-5xl">150</p>
                     <div class="text-md">
@@ -270,7 +250,7 @@
                     <p>Renovação de 1 treino</p>
                     <p>Atinja uma transformação completa</p>
                 </div>
-                <button class="font-bold bg-gray-500 rounded-3xl p-3 mb-5"><a href="">COMEÇAR AGORA</a></button>
+                <button class="font-bold bg-[#800000] rounded-3xl py-2 px-3 mb-5"><a href="">COMEÇAR AGORA</a></button>
             </div>
         </div>
     </div>
@@ -335,9 +315,9 @@
                 <p>Copyright 2022</p>
                 <p>Todos os direitos reservados.</p>
                 <div class="flex">
-                    <a href="https://metodourso.fun/termos-de-uso">Termos de Uso</a>
+                    <a href="">Termos de Uso</a>
                     <span>&nbsp|&nbsp</span>
-                    <a href="https://metodourso.fun/politicas-de-privacidade">Políticas de Privacidade</a>
+                    <a href="">Políticas de Privacidade</a>
                 </div>
             </div>
         </div>
