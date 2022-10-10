@@ -662,16 +662,12 @@ video {
   height: 20%;
 }
 
-.h-64 {
-  height: 16rem;
+.h-60 {
+  height: 15rem;
 }
 
 .h-8 {
   height: 2rem;
-}
-
-.h-60 {
-  height: 15rem;
 }
 
 .w-full {
