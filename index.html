@@ -12,10 +12,6 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <title>Consultoria - Guilherme Santos</title>
     <style>
-        #carousel2 {
-            --carousel-index: 0;
-            transform: translateX(calc(var(--carousel-index) * -85%));
-        }
         .font-bebasneue {
             font-family: 'Bebas Neue', sans-serif;
         }
@@ -93,20 +89,30 @@
         <div class="flex items-end lg:justify-end w-full h-[60vh] lg:w-1/2 lg:h-screen bg-cover bg-center bg-no-repeat" style="background-image: url('imagens/IMG_0123.jpg')">
             <div class="w-full h-[20%] lg:w-[40%] lg:h-full bg-gradient-to-t lg:bg-gradient-to-l from-white"></div>
         </div>
-        <div class="flex flex-col items-center justify-center w-full lg:w-1/2">
-            <div class="flex flex-col items-center text-5xl lg:text-6xl font-bebasneue">
-                <p class="text-[#142339] -mb-2">RESULTADOS</p>
-                <p class="text-[#B85E75]">TEAM GUI SANTOS</p>
-            </div>
-            <div class="swiper mySwiper relative my-5">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="imagens/antesEdepois/antesEdepois1.jpg"></div>
-                    <div class="swiper-slide"><img src="imagens/antesEdepois/antesEdepois2.jpg"></div>
-                    <div class="swiper-slide"><img src="imagens/antesEdepois/antesEdepois3.jpg"></div>
-                    <div class="swiper-slide"><img src="imagens/antesEdepois/antesEdepois4.jpg"></div>
+        <div class="flex flex-col items-center justify-center lg:w-1/2">
+            <div class="flex flex-col w-full lg:w-[80%]">
+                <div class="flex flex-col items-center text-5xl lg:text-6xl font-bebasneue">
+                    <p class="text-[#142339] -mb-2">RESULTADOS</p>
+                    <p class="text-[#B85E75]">TEAM GUI SANTOS</p>
                 </div>
-                <div class="prev absolute top-[42.5%] text-white rounded-full bg-[#B85E75] p-2 lg:p-3 ml-[2%] lg:ml-[4%] z-10"><img src="imagens/icones/arrow-left.png"></div>
-                <div class="next absolute top-[42.5%] text-white rounded-full bg-[#B85E75] p-2 lg:p-3 mr-[2%] lg:mr-[4%] z-10 right-0"><img src="imagens/icones/arrow-right.png"></div>
+                <div class="swiper mySwiper1 relative mt-5">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img class="rounded-xl" src="imagens/antesEdepois/antesEdepois1.jpg">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="rounded-xl" src="imagens/antesEdepois/antesEdepois2.jpg">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="rounded-xl" src="imagens/antesEdepois/antesEdepois3.jpg">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="rounded-xl" src="imagens/antesEdepois/antesEdepois4.jpg">
+                        </div>
+                    </div>
+                    <div class="prev1 absolute top-[42.5%] text-white rounded-full bg-[#B85E75] p-2 lg:p-3 z-10 left-2 lg:left-7"><img src="imagens/icones/arrow-left.png"></div>
+                    <div class="next1 absolute top-[42.5%] text-white rounded-full bg-[#B85E75] p-2 lg:p-3 z-10 right-2 lg:right-7"><img src="imagens/icones/arrow-right.png"></div>
+                </div>
             </div>
             <div class="flex justify-center w-full text-white text-center font-montserrat font-bold p-5 lg:p-0 lg:py-5">
                 <a class="w-full lg:w-1/3 rounded-xl bg-[#B85E75] shadow shadow-black p-3" href="#planos">ENTRAR PARA EQUIPE</a>
@@ -157,25 +163,39 @@
         <div class="flex items-end lg:justify-end w-full h-[60vh] lg:w-1/2 lg:h-screen bg-cover bg-center bg-no-repeat" style="background-image: url('imagens/IMG_0090.jpg')">
             <div class="w-full h-[20%] lg:w-[40%] lg:h-full bg-gradient-to-t lg:bg-gradient-to-l from-white"></div>
         </div>
-        <div class="flex flex-col items-center justify-center w-full lg:w-1/2 mt-4 lg:mt-0">
-            <div class="flex flex-col items-center text-5xl lg:text-6xl font-bebasneue">
-                <p class="text-[#142339] -mb-2">DEPOIMENTOS</p>
-                <p class="text-[#B85E75]">TEAM GUI SANTOS</p>
-            </div>
-            <div class="relative overflow-hidden w-full lg:w-[80%] mt-5">
-                <div id="carousel2" class="flex items-center duration-1000 ease-in-out w-full space-x-[5%]">
-                    <video class="flex w-[80%] lg:w-[37.5%] shrink-0 grow-0 ml-[10%]" src="imagens/depoimentos/depoimento5.mp4#t=0.001" controls></video>
-                    <video class="flex w-[80%] lg:w-[37.5%] shrink-0 grow-0" src="imagens/depoimentos/depoimento4.mp4#t=0.001" controls></video>
-                    <video class="flex w-[80%] lg:w-[37.5%] shrink-0 grow-0" src="imagens/depoimentos/depoimento6.mp4#t=0.001" controls></video>
-                    <video class="flex w-[80%] lg:w-[37.5%] shrink-0 grow-0" src="imagens/depoimentos/depoimento7.mp4#t=0.001" controls></video>
-                    <video class="flex w-[80%] lg:w-[37.5%] shrink-0 grow-0" src="imagens/depoimentos/depoimento1.mp4#t=0.001" controls></video>
-                    <video class="flex w-[80%] lg:w-[37.5%] shrink-0 grow-0" src="imagens/depoimentos/depoimento2.mp4#t=0.001" controls></video>
-                    <video class="flex w-[80%] lg:w-[37.5%] shrink-0 grow-0" src="imagens/depoimentos/depoimento3.mp4#t=0.001" controls></video>
+        <div class="flex flex-col items-center justify-center lg:w-1/2">
+            <div class="flex flex-col items-center w-full lg:w-[50%]">
+                <div class="flex flex-col items-center text-5xl lg:text-6xl font-bebasneue">
+                    <p class="text-[#142339] -mb-2">DEPOIMENTOS</p>
+                    <p class="text-[#B85E75]">TEAM GUI SANTOS</p>
+                </div>                
+                <div class="swiper mySwiper2 relative mt-5">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <video class="w-full rounded-xl" src="imagens/depoimentos/depoimento6.mp4#t=0.001" controls></video>
+                        </div>
+                        <div class="swiper-slide">
+                            <video class="w-full rounded-xl" src="imagens/depoimentos/depoimento4.mp4#t=0.001" controls></video>
+                        </div>
+                        <div class="swiper-slide">
+                            <video class="w-full rounded-xl" src="imagens/depoimentos/depoimento1.mp4#t=0.001" controls></video>
+                        </div>
+                        <div class="swiper-slide">
+                            <video class="w-full rounded-xl" src="imagens/depoimentos/depoimento2.mp4#t=0.001" controls></video>
+                        </div>
+                        <div class="swiper-slide">
+                            <video class="w-full rounded-xl" src="imagens/depoimentos/depoimento3.mp4#t=0.001" controls></video>
+                        </div>
+                        <div class="swiper-slide">
+                            <video class="w-full rounded-xl" src="imagens/depoimentos/depoimento5.mp4#t=0.001" controls></video>
+                        </div>
+                        <div class="swiper-slide">
+                            <video class="w-full rounded-xl" src="imagens/depoimentos/depoimento7.mp4#t=0.001" controls></video>
+                        </div>
+                    </div>
+                    <div class="prev2 absolute top-[42.5%] text-white rounded-full bg-[#B85E75] p-2 lg:p-3 z-10 left-2 lg:left-7"><img src="imagens/icones/arrow-left.png"></div>
+                    <div class="next2 absolute top-[42.5%] text-white rounded-full bg-[#B85E75] p-2 lg:p-3 z-10 right-2 lg:right-7"><img src="imagens/icones/arrow-right.png"></div>
                 </div>
-                <button onclick="prev2(1)" class="block lg:hidden absolute top-[42.5%] text-white rounded-full bg-[#B85E75] p-2 ml-[2.5%]"><img src="imagens/icones/arrow-left.png"></button>
-                <button onclick="next2(1)" class="block lg:hidden absolute top-[42.5%] text-white rounded-full bg-[#B85E75] p-2 mr-[2.5%] right-0"><img src="imagens/icones/arrow-right.png"></button>
-                <button onclick="prev2(4)" class="hidden lg:block absolute top-[42.5%] text-white rounded-full bg-[#B85E75] p-3 ml-[4%]"><img src="imagens/icones/arrow-left.png"></button>
-                <button onclick="next2(4)" class="hidden lg:block absolute top-[42.5%] text-white rounded-full bg-[#B85E75] p-3 mr-[4%] right-0"><img src="imagens/icones/arrow-right.png"></button>
             </div>
             <div class="flex justify-center w-full text-white text-center font-montserrat font-bold p-5 lg:p-0 lg:py-5">
                 <a class="w-full lg:w-1/3 rounded-xl bg-[#B85E75] shadow shadow-black p-3" href="#planos">ENTRAR PARA EQUIPE</a>
@@ -306,7 +326,7 @@
 
 
     <!-- Quebra de objeções -->
-    <div class="text-[#142339] bg-[#DBD9D0] py-10 lg:px-10">
+    <div class="text-[#142339] bg-[#DBD9D0] py-10 lg:px-10 border-t border-[#009999]">
         <p class="text-5xl text-center font-bebasneue pb-10">PERGUNTAS FREQUENTES</p>
         <div class="flex flex-col lg:flex-row mx-5 lg:space-x-5">
             <div class="lg:w-1/2 mb-5 lg:mb-0 space-y-5">
@@ -377,37 +397,30 @@
 
     <script>
         // ------------------------------ Carrossel de Antes e Depois ------------------------------ \\
-        var swiper = new Swiper(".mySwiper", {
+        var swiper = new Swiper(".mySwiper1", {
             loop: true,
             slidesPerView: 1.2,
             spaceBetween: 15,
             centeredSlides: true,
             navigation: {
-                nextEl: ".next",
-                prevEl: ".prev",
+                nextEl: ".next1",
+                prevEl: ".prev1",
             },
         });
         // ------------------------------ Carrossel de Antes e Depois ------------------------------ \\
 
 
         // ------------------------------ Carrossel de Depoimentos ------------------------------ \\
-        let carousel2 = document.querySelector("#carousel2");
-        let images2 = document.querySelectorAll("#carousel2 video");
-        let carouselIndex2;
-        function prev2(limit) {
-            carouselIndex2 = parseInt(getComputedStyle(carousel2).getPropertyValue("--carousel-index"));
-            if (carouselIndex2 < 1)
-                carousel2.style.setProperty("--carousel-index", images2.length - limit);
-            else
-                carousel2.style.setProperty("--carousel-index", carouselIndex2 - 1);
-        }
-        function next2(limit) {
-            let carouselIndex2 = parseInt(getComputedStyle(carousel2).getPropertyValue("--carousel-index"));
-            if (carouselIndex2 >= images2.length - limit)
-                carousel2.style.setProperty("--carousel-index", 0);
-            else
-                carousel2.style.setProperty("--carousel-index", carouselIndex2 + 1);
-        }
+        var swiper = new Swiper(".mySwiper2", {
+            loop: true,
+            slidesPerView: 1.4,
+            spaceBetween: 15,
+            centeredSlides: true,
+            navigation: {
+                nextEl: ".next2",
+                prevEl: ".prev2",
+            },
+        });
         // ------------------------------ Carrossel de Depoimentos ------------------------------ \\
 
 
