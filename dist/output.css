@@ -563,30 +563,6 @@ video {
   top: 42.5%;
 }
 
-.right-0 {
-  right: 0px;
-}
-
-.right-10 {
-  right: 2.5rem;
-}
-
-.right-5 {
-  right: 1.25rem;
-}
-
-.right-3 {
-  right: 0.75rem;
-}
-
-.left-3 {
-  left: 0.75rem;
-}
-
-.left-5 {
-  left: 1.25rem;
-}
-
 .left-2 {
   left: 0.5rem;
 }
@@ -628,14 +604,6 @@ video {
 
 .mt-5 {
   margin-top: 1.25rem;
-}
-
-.ml-\[2\%\] {
-  margin-left: 2%;
-}
-
-.mr-\[2\%\] {
-  margin-right: 2%;
 }
 
 .mb-10 {
@@ -991,14 +959,6 @@ video {
 }
 
 @media (min-width: 768px) {
-  .md\:left-5 {
-    left: 1.25rem;
-  }
-
-  .md\:right-5 {
-    right: 1.25rem;
-  }
-
   .md\:w-1\/2 {
     width: 50%;
   }
@@ -1009,22 +969,6 @@ video {
 }
 
 @media (min-width: 1024px) {
-  .lg\:left-4 {
-    left: 1rem;
-  }
-
-  .lg\:right-4 {
-    right: 1rem;
-  }
-
-  .lg\:left-5 {
-    left: 1.25rem;
-  }
-
-  .lg\:right-5 {
-    right: 1.25rem;
-  }
-
   .lg\:left-7 {
     left: 1.75rem;
   }
@@ -1042,56 +986,8 @@ video {
     margin-top: -0px;
   }
 
-  .lg\:ml-\[4\%\] {
-    margin-left: 4%;
-  }
-
-  .lg\:mr-\[4\%\] {
-    margin-right: 4%;
-  }
-
-  .lg\:ml-\[3\.5\%\] {
-    margin-left: 3.5%;
-  }
-
-  .lg\:mr-\[3\.5\%\] {
-    margin-right: 3.5%;
-  }
-
   .lg\:mb-0 {
     margin-bottom: 0px;
-  }
-
-  .lg\:ml-\[3\%\] {
-    margin-left: 3%;
-  }
-
-  .lg\:mr-\[3\%\] {
-    margin-right: 3%;
-  }
-
-  .lg\:ml-\[\%\] {
-    margin-left: %;
-  }
-
-  .lg\:mr-\[\%\] {
-    margin-right: %;
-  }
-
-  .lg\:ml-\[10\%\] {
-    margin-left: 10%;
-  }
-
-  .lg\:mr-\[10\%\] {
-    margin-right: 10%;
-  }
-
-  .lg\:block {
-    display: block;
-  }
-
-  .lg\:hidden {
-    display: none;
   }
 
   .lg\:h-screen {
@@ -1118,24 +1014,12 @@ video {
     width: 80%;
   }
 
-  .lg\:w-\[25\%\] {
-    width: 25%;
-  }
-
   .lg\:w-\[50\%\] {
     width: 50%;
   }
 
-  .lg\:w-\[70\%\] {
-    width: 70%;
-  }
-
-  .lg\:w-\[45\%\] {
-    width: 45%;
-  }
-
-  .lg\:w-\[60\%\] {
-    width: 60%;
+  .lg\:w-\[25\%\] {
+    width: 25%;
   }
 
   .lg\:flex-row {
@@ -1191,46 +1075,6 @@ video {
 }
 
 @media (min-width: 1280px) {
-  .xl\:left-10 {
-    left: 2.5rem;
-  }
-
-  .xl\:right-10 {
-    right: 2.5rem;
-  }
-
-  .xl\:left-8 {
-    left: 2rem;
-  }
-
-  .xl\:right-8 {
-    right: 2rem;
-  }
-
-  .xl\:left-6 {
-    left: 1.5rem;
-  }
-
-  .xl\:right-6 {
-    right: 1.5rem;
-  }
-
-  .xl\:left-5 {
-    left: 1.25rem;
-  }
-
-  .xl\:right-5 {
-    right: 1.25rem;
-  }
-
-  .xl\:left-7 {
-    left: 1.75rem;
-  }
-
-  .xl\:right-7 {
-    right: 1.75rem;
-  }
-
   .xl\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
